@@ -1,0 +1,14 @@
+{
+  "title": "VerificarEmails - Validación individual",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "email": {
+      "title": "Correo electrónico",
+      "type": "string",
+      "description": "Correo que deseas verificar",
+      "pattern": "^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$"
+    }
+  },
+  "required": ["email"]
+}

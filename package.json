@@ -1,0 +1,14 @@
+{
+  "name": "verificaremails-email-validator",
+  "version": "1.0.0",
+  "description": "Valida emails individuales usando la API de VerificarEmails.com",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.7",
+    "apify": "^3.0.1"
+  },
+  "type": "module"
+}
