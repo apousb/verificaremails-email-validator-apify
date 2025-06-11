@@ -5,12 +5,17 @@ await Actor.init();
 
 const input = await Actor.getInput();
 const email = encodeURIComponent(input.email);
+const token = input.token;
 
 if (!email) {
   throw new Error('El campo "email" es obligatorio.');
 }
 
-const apiUrl = `https://dashboard.verificaremails.com/myapi/email/validate/single?term=${email}`;
+if (!token) {
+  throw new Error('El campo "token" es obligatorio.');
+}
+
+const apiUrl = `https://dashboard.verificaremails.com/myapi/email/validate/single?auth-token=${token}&term=${email}`;
 
 const response = await fetch(apiUrl);
 if (!response.ok) {

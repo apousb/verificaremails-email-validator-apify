@@ -9,7 +9,13 @@
       "description": "Correo que deseas verificar",
       "pattern": "^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$",
       "editor": "textfield"
+    },
+    "token": {
+      "title": "API Token",
+      "type": "string",
+      "description": "Tu token personal de VerificarEmails.com",
+      "editor": "textfield"
     }
   },
-  "required": ["email"]
+  "required": ["email", "token"]
 }
